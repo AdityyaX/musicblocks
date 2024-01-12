@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    labels:
+      - kind/chore
+      - pr/dependencies
+  - package-ecosystem: npm
+    directory: "/lib"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    labels:
+      - kind/chore
+      - pr/dependencies
