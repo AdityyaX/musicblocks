@@ -51,7 +51,7 @@ class HelpWidget {
         widgetWindow.show();
         widgetWindow.onclose = () => {
             this.isOpen = false;
-            document.onkeydown = activity.__keyPressed ; 
+            document.onkeydown = activity.__keyPressed; 
             widgetWindow.destroy();
         };
         // Position the widget and make it visible.
@@ -464,7 +464,6 @@ class HelpWidget {
         this._helpDiv.insertAdjacentHTML("afterbegin", helpDivHTML) ;
 
         this.widgetWindow.getWidgetBody().append(this._helpDiv);
-        this.widgetWindow.sendToCenter();
         let cell = docById("right-arrow");
         let rightArrow = docById("right-arrow");
         let leftArrow = docById("left-arrow");
